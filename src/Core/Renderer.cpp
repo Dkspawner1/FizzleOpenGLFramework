@@ -28,12 +28,12 @@ const char* fragmentShaderSource = R"(
     }
 )";
 
-Renderer::Renderer() : vao(0), vbo(0), shaderProgram(0) {}
+Renderer::Renderer() : m_vao(0), m_vbo(0), m_shaderProgram(0) {}
 
 Renderer::~Renderer() {
-    glDeleteVertexArrays(1, &vao);
-    glDeleteBuffers(1, &vbo);
-    glDeleteProgram(shaderProgram);
+    glDeleteVertexArrays(1, &m_vao);
+    glDeleteBuffers(1, &m_vbo);
+    glDeleteProgram(m_shaderProgram);
 }
 
 void Renderer::Initialize() {
@@ -43,7 +43,7 @@ void Renderer::Initialize() {
 
 void Renderer::Clear() {
     glClear(GL_COLOR_BUFFER_BIT);
-    vertexData.clear();
+    m_vertexData.clear();
 }
 
 void Renderer::DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color) {
@@ -57,21 +57,21 @@ void Renderer::DrawQuad(const glm::vec2& position, const glm::vec2& size, const 
         position.x + size.x, position.y + size.y, color.r, color.g, color.b, color.a,
         position.x, position.y + size.y,        color.r, color.g, color.b, color.a
     };
-    vertexData.insert(vertexData.end(), std::begin(vertices), std::end(vertices));
+    m_vertexData.insert(m_vertexData.end(), std::begin(vertices), std::end(vertices));
 }
 
 void Renderer::Render() {
-    glUseProgram(shaderProgram);
+    glUseProgram(m_shaderProgram);
 
     glm::mat4 projection = glm::ortho(0.0f, 800.0f, 600.0f, 0.0f, -1.0f, 1.0f);
-    GLint projLoc = glGetUniformLocation(shaderProgram, "projection");
+    GLint projLoc = glGetUniformLocation(m_shaderProgram, "projection");
     glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
-    glBindVertexArray(vao);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, vertexData.size() * sizeof(float), vertexData.data(), GL_DYNAMIC_DRAW);
+    glBindVertexArray(m_vao);
+    glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
+    glBufferData(GL_ARRAY_BUFFER, m_vertexData.size() * sizeof(float), m_vertexData.data(), GL_DYNAMIC_DRAW);
 
-    glDrawArrays(GL_TRIANGLES, 0, vertexData.size() / 6);
+    glDrawArrays(GL_TRIANGLES, 0, m_vertexData.size() / 6);
 
     glBindVertexArray(0);
     glUseProgram(0);
@@ -88,22 +88,22 @@ void Renderer::setupShaders() {
     glCompileShader(fragmentShader);
     checkShaderCompileErrors(fragmentShader, "FRAGMENT");
 
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    checkProgramLinkErrors(shaderProgram);
+    m_shaderProgram = glCreateProgram();
+    glAttachShader(m_shaderProgram, vertexShader);
+    glAttachShader(m_shaderProgram, fragmentShader);
+    glLinkProgram(m_shaderProgram);
+    checkProgramLinkErrors(m_shaderProgram);
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 }
 
 void Renderer::setupBuffers() {
-    glGenVertexArrays(1, &vao);
-    glGenBuffers(1, &vbo);
+    glGenVertexArrays(1, &m_vao);
+    glGenBuffers(1, &m_vbo);
 
-    glBindVertexArray(vao);
-    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    glBindVertexArray(m_vao);
+    glBindBuffer(GL_ARRAY_BUFFER, m_vbo);
 
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);

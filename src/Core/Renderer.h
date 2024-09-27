@@ -1,7 +1,5 @@
 #pragma once
 
-#define GLEW_STATIC
-#define GLEW_NO_GLU
 #include <GL/glew.h>
 #include <glm/glm.hpp>
 #include <vector>
@@ -18,9 +16,9 @@ public:
     void Render();
 
 private:
-    GLuint vao, vbo;
-    GLuint shaderProgram;
-    std::vector<float> vertexData;
+    GLuint m_vao, m_vbo;
+    GLuint m_shaderProgram;
+    std::vector<float> m_vertexData;
 
     void setupShaders();
     void setupBuffers();

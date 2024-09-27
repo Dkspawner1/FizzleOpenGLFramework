@@ -2,9 +2,10 @@ CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.cpp \
  /usr/include/stdc-predef.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.h \
- /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Component.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Entity.h \
- /usr/include/c++/14.2.1/atomic /usr/include/c++/14.2.1/bits/version.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Component.h \
+ /usr/include/c++/14.2.1/unordered_map \
+ /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,59 +14,70 @@ CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/14.2.1/pstl/pstl_config.h \
- /usr/include/c++/14.2.1/bits/atomic_base.h /usr/include/c++/14.2.1/new \
+ /usr/include/c++/14.2.1/initializer_list \
+ /usr/include/c++/14.2.1/bits/unordered_map.h \
+ /usr/include/c++/14.2.1/bits/hashtable.h \
+ /usr/include/c++/14.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/14.2.1/tuple /usr/include/c++/14.2.1/bits/stl_pair.h \
+ /usr/include/c++/14.2.1/type_traits \
+ /usr/include/c++/14.2.1/bits/version.h \
+ /usr/include/c++/14.2.1/bits/move.h \
+ /usr/include/c++/14.2.1/bits/utility.h \
+ /usr/include/c++/14.2.1/bits/uses_allocator.h \
+ /usr/include/c++/14.2.1/bits/invoke.h \
+ /usr/include/c++/14.2.1/bits/functional_hash.h \
+ /usr/include/c++/14.2.1/bits/hash_bytes.h \
+ /usr/include/c++/14.2.1/bits/stl_algobase.h \
+ /usr/include/c++/14.2.1/bits/functexcept.h \
+ /usr/include/c++/14.2.1/bits/exception_defines.h \
+ /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/14.2.1/ext/type_traits.h \
+ /usr/include/c++/14.2.1/ext/numeric_traits.h \
+ /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
+ /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/14.2.1/bits/concept_check.h \
+ /usr/include/c++/14.2.1/debug/assertions.h \
+ /usr/include/c++/14.2.1/bits/stl_iterator.h \
+ /usr/include/c++/14.2.1/bits/ptr_traits.h \
+ /usr/include/c++/14.2.1/debug/debug.h \
+ /usr/include/c++/14.2.1/bits/predefined_ops.h \
+ /usr/include/c++/14.2.1/bit /usr/include/c++/14.2.1/concepts \
+ /usr/include/c++/14.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/14.2.1/ext/alloc_traits.h \
+ /usr/include/c++/14.2.1/bits/alloc_traits.h \
+ /usr/include/c++/14.2.1/bits/stl_construct.h /usr/include/c++/14.2.1/new \
  /usr/include/c++/14.2.1/bits/exception.h \
+ /usr/include/c++/14.2.1/bits/memoryfwd.h \
+ /usr/include/c++/14.2.1/bits/allocator.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/include/c++/14.2.1/bits/new_allocator.h \
+ /usr/include/c++/14.2.1/bits/enable_special_members.h \
+ /usr/include/c++/14.2.1/bits/stl_function.h \
+ /usr/include/c++/14.2.1/backward/binders.h \
+ /usr/include/c++/14.2.1/bits/node_handle.h \
+ /usr/include/c++/14.2.1/bits/range_access.h \
+ /usr/include/c++/14.2.1/bits/erase_if.h \
+ /usr/include/c++/14.2.1/bits/memory_resource.h \
+ /usr/include/c++/14.2.1/cstddef \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+ /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
+ /usr/include/c++/14.2.1/memory \
+ /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14.2.1/bits/align.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h \
- /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/14.2.1/bits/move.h /usr/include/c++/14.2.1/type_traits \
- /usr/include/c++/14.2.1/cstdint /usr/include/c++/14.2.1/memory \
- /usr/include/c++/14.2.1/bits/memoryfwd.h \
- /usr/include/c++/14.2.1/bits/allocator.h \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/14.2.1/bits/new_allocator.h \
- /usr/include/c++/14.2.1/bits/functexcept.h \
- /usr/include/c++/14.2.1/bits/exception_defines.h \
- /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/14.2.1/bits/stl_construct.h \
- /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
- /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/14.2.1/bits/concept_check.h \
- /usr/include/c++/14.2.1/debug/assertions.h \
- /usr/include/c++/14.2.1/bits/stl_pair.h \
- /usr/include/c++/14.2.1/bits/utility.h \
- /usr/include/c++/14.2.1/ext/numeric_traits.h \
- /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
- /usr/include/c++/14.2.1/ext/type_traits.h \
- /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
- /usr/include/c++/14.2.1/bits/stl_algobase.h \
- /usr/include/c++/14.2.1/bits/stl_iterator.h \
- /usr/include/c++/14.2.1/bits/ptr_traits.h \
- /usr/include/c++/14.2.1/debug/debug.h \
- /usr/include/c++/14.2.1/bits/predefined_ops.h \
- /usr/include/c++/14.2.1/bit /usr/include/c++/14.2.1/concepts \
- /usr/include/c++/14.2.1/ext/alloc_traits.h \
- /usr/include/c++/14.2.1/bits/alloc_traits.h \
- /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14.2.1/bits/align.h \
- /usr/include/c++/14.2.1/bits/uses_allocator.h \
- /usr/include/c++/14.2.1/bits/unique_ptr.h /usr/include/c++/14.2.1/tuple \
- /usr/include/c++/14.2.1/bits/invoke.h \
- /usr/include/c++/14.2.1/bits/stl_function.h \
- /usr/include/c++/14.2.1/backward/binders.h \
- /usr/include/c++/14.2.1/bits/functional_hash.h \
- /usr/include/c++/14.2.1/bits/hash_bytes.h \
+ /usr/include/c++/14.2.1/bits/unique_ptr.h \
  /usr/include/c++/14.2.1/bits/shared_ptr.h /usr/include/c++/14.2.1/iosfwd \
- /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/bits/stringfwd.h \
  /usr/include/c++/14.2.1/bits/postypes.h /usr/include/c++/14.2.1/cwchar \
  /usr/include/wchar.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
@@ -75,7 +87,6 @@ CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: \
  /usr/include/c++/14.2.1/typeinfo \
  /usr/include/c++/14.2.1/bits/allocated_ptr.h \
  /usr/include/c++/14.2.1/bits/refwrap.h \
- /usr/include/c++/14.2.1/ext/aligned_buffer.h \
  /usr/include/c++/14.2.1/ext/atomicity.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
@@ -104,21 +115,12 @@ CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: \
  /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
  /usr/include/c++/14.2.1/bits/nested_exception.h \
  /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14.2.1/bits/atomic_base.h \
+ /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
  /usr/include/c++/14.2.1/backward/auto_ptr.h \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
- /usr/include/c++/14.2.1/typeindex /usr/include/c++/14.2.1/unordered_map \
- /usr/include/c++/14.2.1/initializer_list \
- /usr/include/c++/14.2.1/bits/unordered_map.h \
- /usr/include/c++/14.2.1/bits/hashtable.h \
- /usr/include/c++/14.2.1/bits/hashtable_policy.h \
- /usr/include/c++/14.2.1/bits/enable_special_members.h \
- /usr/include/c++/14.2.1/bits/node_handle.h \
- /usr/include/c++/14.2.1/bits/range_access.h \
- /usr/include/c++/14.2.1/bits/erase_if.h \
- /usr/include/c++/14.2.1/bits/memory_resource.h \
- /usr/include/c++/14.2.1/cstddef \
- /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/vector /usr/include/c++/14.2.1/bits/stl_vector.h \
+ /usr/include/c++/14.2.1/typeindex /usr/include/c++/14.2.1/vector \
+ /usr/include/c++/14.2.1/bits/stl_vector.h \
  /usr/include/c++/14.2.1/bits/stl_bvector.h \
  /usr/include/c++/14.2.1/bits/vector.tcc

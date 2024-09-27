@@ -1,15 +1,10 @@
 #pragma once
-#include <atomic>
-#include <cstdint>
 
-using EntityID = std::atomic<std::uint32_t>;
-
-class Entity
-{
+class Entity {
 public:
-    explicit Entity(std::uint32_t id) : id(id) {}
-    std::uint32_t GetID() const { return id.load(); }
+    explicit Entity(unsigned int id) : m_id(id) {}
+    unsigned int GetID() const { return m_id; }
 
 private:
-    EntityID id;
+    unsigned int m_id;
 };
