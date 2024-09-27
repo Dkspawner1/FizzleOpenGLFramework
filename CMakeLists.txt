@@ -1,42 +1,46 @@
 cmake_minimum_required(VERSION 3.10)
 project(FizzleFramework)
-add_compile_definitions(GLEW_STATIC GLEW_NO_GLU)
+
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Explicitly set build directories
+# Add compile definitions
+add_compile_definitions(GLEW_STATIC GLEW_NO_GLU)
+
+# Set build directories
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
+# Set OpenGL preference
 set(OpenGL_GL_PREFERENCE GLVND)
 
-
-# Find packages
+# Find required packages
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
 find_package(glm REQUIRED)
 
-# Find GLFW
-if(WIN32)
+# Find GLFW (platform-specific)
+if(WIN32 OR APPLE)
     find_package(glfw3 REQUIRED CONFIG)
-elseif(APPLE)
-    find_package(glfw3 REQUIRED CONFIG)
-elseif(UNIX)
+else()
     find_package(PkgConfig REQUIRED)
     pkg_check_modules(GLFW REQUIRED glfw3)
 endif()
 
-# Recursively find all .cpp files in the src directory
+# Collect source files
 file(GLOB_RECURSE SOURCE_FILES
     ${CMAKE_SOURCE_DIR}/src/*.cpp
+    ${CMAKE_SOURCE_DIR}/src/*.h
 )
 
-# Add executable with all source files
-add_executable(FizzleFramework ${SOURCE_FILES})
+# Add executable
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
-# Include directories
-target_include_directories(FizzleFramework PRIVATE
+# Set include directories
+target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/src
     ${OPENGL_INCLUDE_DIR}
     ${GLFW_INCLUDE_DIRS}
@@ -45,7 +49,7 @@ target_include_directories(FizzleFramework PRIVATE
 )
 
 # Link libraries
-target_link_libraries(FizzleFramework PRIVATE
+target_link_libraries(${PROJECT_NAME} PRIVATE
     ${OPENGL_LIBRARIES}
     ${GLFW_LIBRARIES}
     GLEW::GLEW
@@ -53,12 +57,27 @@ target_link_libraries(FizzleFramework PRIVATE
 )
 
 # Set output directory
-set_target_properties(FizzleFramework PROPERTIES
+set_target_properties(${PROJECT_NAME} PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 )
 
-# Add compile definitions for GLFW
+# Add compile definitions for GLFW on Unix (non-Apple)
 if(UNIX AND NOT APPLE)
-    target_compile_definitions(FizzleFramework PRIVATE GLFW_EXPOSE_NATIVE_X11)
+    target_compile_definitions(${PROJECT_NAME} PRIVATE GLFW_EXPOSE_NATIVE_X11)
 endif()
+
+# Enable warnings
+if(MSVC)
+    target_compile_options(${PROJECT_NAME} PRIVATE /W4)
+else()
+    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+
+# Set build type if not set
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+# Print build type
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
