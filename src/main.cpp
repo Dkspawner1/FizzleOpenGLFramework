@@ -6,6 +6,7 @@
 #include "Scenes/SceneManager.h"
 #include "Scenes/SimpleScene.h"
 #include "Scenes/SimpleGameState.h"
+#include "ECS/World.h"
 #include <iostream>
 #include <memory>
 #include <GLFW/glfw3.h>
@@ -27,6 +28,9 @@ int main() {
         std::cout << "Creating event system..." << std::endl;
         EventSystem eventSystem;
 
+        std::cout << "Creating world..." << std::endl;
+        World world;
+
         std::cout << "Creating scene manager..." << std::endl;
         SceneManager sceneManager(eventSystem);
 
@@ -40,7 +44,7 @@ int main() {
         });
 
         std::cout << "Adding simple scene..." << std::endl;
-        sceneManager.AddScene("SimpleScene", std::make_unique<SimpleScene>(renderer));
+        sceneManager.AddScene("SimpleScene", std::make_unique<SimpleScene>(renderer, world));
 
         std::cout << "Pushing initial game state..." << std::endl;
         stateManager.PushState(std::make_unique<SimpleGameState>(sceneManager));

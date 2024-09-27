@@ -108,10 +108,19 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/14.2.1/tuple \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.h \
+ /usr/include/stb/stb_image.h /usr/include/c++/14.2.1/stdlib.h \
  /usr/include/GL/glew.h /usr/include/c++/14.2.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/glm/glm.hpp \
+ /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
+ /usr/include/glm/ext/vector_float2.hpp \
+ /usr/include/glm/detail/type_vec2.hpp \
+ /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/14.2.1/cassert /usr/include/assert.h \
+ /usr/include/glm/simd/platform.h /usr/include/glm/detail/type_vec2.inl \
+ /usr/include/glm/detail/compute_vector_relational.hpp \
+ /usr/include/c++/14.2.1/limits /usr/include/glm/glm.hpp \
  /usr/include/glm/detail/_fixes.hpp /usr/include/c++/14.2.1/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -120,7 +129,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/14.2.1/bits/specfun.h \
- /usr/include/c++/14.2.1/limits /usr/include/c++/14.2.1/tr1/gamma.tcc \
+ /usr/include/c++/14.2.1/tr1/gamma.tcc \
  /usr/include/c++/14.2.1/tr1/special_function_util.h \
  /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
  /usr/include/c++/14.2.1/tr1/beta_function.tcc \
@@ -132,9 +141,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/14.2.1/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/14.2.1/climits \
+ /usr/include/glm/detail/setup.hpp /usr/include/c++/14.2.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -143,14 +150,9 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/uio_lim.h /usr/include/c++/14.2.1/cfloat \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
- /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
+ /usr/include/glm/fwd.hpp /usr/include/glm/vec2.hpp \
  /usr/include/glm/ext/vector_bool2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl \
- /usr/include/glm/detail/compute_vector_relational.hpp \
  /usr/include/glm/ext/vector_bool2_precision.hpp \
- /usr/include/glm/ext/vector_float2.hpp \
  /usr/include/glm/ext/vector_float2_precision.hpp \
  /usr/include/glm/ext/vector_double2.hpp \
  /usr/include/glm/ext/vector_double2_precision.hpp \
@@ -321,14 +323,16 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/World.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/Entity.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/Component.h \
+ /usr/include/c++/14.2.1/stdexcept \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/SpriteComponent.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/TransformComponent.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h \
  /usr/include/c++/14.2.1/iostream /usr/include/c++/14.2.1/ostream \
  /usr/include/c++/14.2.1/ios /usr/include/c++/14.2.1/bits/ios_base.h \
  /usr/include/c++/14.2.1/bits/locale_classes.h \
  /usr/include/c++/14.2.1/bits/locale_classes.tcc \
- /usr/include/c++/14.2.1/system_error /usr/include/c++/14.2.1/stdexcept \
- /usr/include/c++/14.2.1/streambuf \
+ /usr/include/c++/14.2.1/system_error /usr/include/c++/14.2.1/streambuf \
  /usr/include/c++/14.2.1/bits/streambuf.tcc \
  /usr/include/c++/14.2.1/bits/basic_ios.h \
  /usr/include/c++/14.2.1/bits/locale_facets.h \

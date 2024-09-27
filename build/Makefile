@@ -153,6 +153,30 @@ src/Core/Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.s
 .PHONY : src/Core/Renderer.cpp.s
 
+src/Core/Texture.o: src/Core/Texture.cpp.o
+.PHONY : src/Core/Texture.o
+
+# target to build an object file
+src/Core/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o
+.PHONY : src/Core/Texture.cpp.o
+
+src/Core/Texture.i: src/Core/Texture.cpp.i
+.PHONY : src/Core/Texture.i
+
+# target to preprocess a source file
+src/Core/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.i
+.PHONY : src/Core/Texture.cpp.i
+
+src/Core/Texture.s: src/Core/Texture.cpp.s
+.PHONY : src/Core/Texture.s
+
+# target to generate assembly for a file
+src/Core/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.s
+.PHONY : src/Core/Texture.cpp.s
+
 src/Core/Window.o: src/Core/Window.cpp.o
 .PHONY : src/Core/Window.o
 
@@ -176,6 +200,30 @@ src/Core/Window.s: src/Core/Window.cpp.s
 src/Core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.s
 .PHONY : src/Core/Window.cpp.s
+
+src/ECS/SpriteComponent.o: src/ECS/SpriteComponent.cpp.o
+.PHONY : src/ECS/SpriteComponent.o
+
+# target to build an object file
+src/ECS/SpriteComponent.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o
+.PHONY : src/ECS/SpriteComponent.cpp.o
+
+src/ECS/SpriteComponent.i: src/ECS/SpriteComponent.cpp.i
+.PHONY : src/ECS/SpriteComponent.i
+
+# target to preprocess a source file
+src/ECS/SpriteComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.i
+.PHONY : src/ECS/SpriteComponent.cpp.i
+
+src/ECS/SpriteComponent.s: src/ECS/SpriteComponent.cpp.s
+.PHONY : src/ECS/SpriteComponent.s
+
+# target to generate assembly for a file
+src/ECS/SpriteComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.s
+.PHONY : src/ECS/SpriteComponent.cpp.s
 
 src/ECS/World.o: src/ECS/World.cpp.o
 .PHONY : src/ECS/World.o
@@ -357,9 +405,15 @@ help:
 	@echo "... src/Core/Renderer.o"
 	@echo "... src/Core/Renderer.i"
 	@echo "... src/Core/Renderer.s"
+	@echo "... src/Core/Texture.o"
+	@echo "... src/Core/Texture.i"
+	@echo "... src/Core/Texture.s"
 	@echo "... src/Core/Window.o"
 	@echo "... src/Core/Window.i"
 	@echo "... src/Core/Window.s"
+	@echo "... src/ECS/SpriteComponent.o"
+	@echo "... src/ECS/SpriteComponent.i"
+	@echo "... src/ECS/SpriteComponent.s"
 	@echo "... src/ECS/World.o"
 	@echo "... src/ECS/World.i"
 	@echo "... src/ECS/World.s"

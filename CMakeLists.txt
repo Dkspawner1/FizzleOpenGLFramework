@@ -30,6 +30,9 @@ else()
     pkg_check_modules(GLFW REQUIRED glfw3)
 endif()
 
+# Add stb_image directory
+set(STB_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/external/stb)
+
 # Collect source files
 file(GLOB_RECURSE SOURCE_FILES
     ${CMAKE_SOURCE_DIR}/src/*.cpp
@@ -42,10 +45,12 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 # Set include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_SOURCE_DIR}/include
     ${OPENGL_INCLUDE_DIR}
     ${GLFW_INCLUDE_DIRS}
     ${GLEW_INCLUDE_DIRS}
     ${GLM_INCLUDE_DIRS}
+    ${STB_INCLUDE_DIR}
 )
 
 # Link libraries
@@ -81,3 +86,7 @@ endif()
 # Print build type
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
 
+# Add math library on Unix
+if(UNIX)
+    target_link_libraries(${PROJECT_NAME} PRIVATE m)
+endif()

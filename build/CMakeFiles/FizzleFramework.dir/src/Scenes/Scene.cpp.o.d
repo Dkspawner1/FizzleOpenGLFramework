@@ -121,7 +121,38 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o: \
  /usr/include/c++/14.2.1/backward/auto_ptr.h \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
- /usr/include/c++/14.2.1/typeindex /usr/include/c++/14.2.1/vector \
- /usr/include/c++/14.2.1/bits/stl_vector.h \
+ /usr/include/c++/14.2.1/typeindex /usr/include/c++/14.2.1/stdexcept \
+ /usr/include/c++/14.2.1/string \
+ /usr/include/c++/14.2.1/bits/char_traits.h \
+ /usr/include/c++/14.2.1/bits/localefwd.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/14.2.1/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/14.2.1/cctype \
+ /usr/include/ctype.h /usr/include/c++/14.2.1/bits/ostream_insert.h \
+ /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
+ /usr/include/c++/14.2.1/bits/basic_string.h \
+ /usr/include/c++/14.2.1/string_view \
+ /usr/include/c++/14.2.1/bits/string_view.tcc \
+ /usr/include/c++/14.2.1/ext/string_conversions.h \
+ /usr/include/c++/14.2.1/cstdlib /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/sys/types.h /usr/include/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/types/sigset_t.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/14.2.1/bits/std_abs.h /usr/include/c++/14.2.1/cstdio \
+ /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
+ /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/stdio.h \
+ /usr/include/c++/14.2.1/cerrno /usr/include/errno.h \
+ /usr/include/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
+ /usr/include/asm-generic/errno-base.h /usr/include/bits/types/error_t.h \
+ /usr/include/c++/14.2.1/bits/charconv.h \
+ /usr/include/c++/14.2.1/bits/basic_string.tcc \
+ /usr/include/c++/14.2.1/vector /usr/include/c++/14.2.1/bits/stl_vector.h \
  /usr/include/c++/14.2.1/bits/stl_bvector.h \
  /usr/include/c++/14.2.1/bits/vector.tcc

@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.cpp" "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o.d"
+  "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.cpp" "CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o.d"
   "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp" "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o.d"
+  "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/SpriteComponent.cpp" "CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o.d"
   "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.cpp" "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o.d"
   "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/GameStateManager.cpp" "CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o.d"
   "/home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/Scene.cpp" "CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o" "gcc" "CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o.d"

@@ -2,6 +2,7 @@
 #pragma once
 #include "GameState.h"
 #include "SceneManager.h"
+#include <vector>
 
 class SimpleGameState : public GameState {
 public:

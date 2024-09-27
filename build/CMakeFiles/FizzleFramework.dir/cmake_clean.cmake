@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o"
   "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o.d"
+  "CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o"
+  "CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o.d"
   "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o"
   "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o.d"
+  "CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o"
+  "CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o.d"
   "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o"
   "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o.d"
   "CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o"

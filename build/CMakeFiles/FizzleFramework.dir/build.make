@@ -83,10 +83,24 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.cpp -o CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.s
 
+CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
+CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.cpp
+CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.cpp
+
+CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.cpp > CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.i
+
+CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.cpp -o CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.s
+
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.i: cmake_force
@@ -97,10 +111,24 @@ CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp -o CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.s
 
+CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
+CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/SpriteComponent.cpp
+CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/SpriteComponent.cpp
+
+CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/SpriteComponent.cpp > CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.i
+
+CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/SpriteComponent.cpp -o CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.s
+
 CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.cpp
 CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.cpp
 
 CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/GameStateManager.cpp
 CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/GameStateManager.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.i: cmake_force
@@ -128,7 +156,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/Scene.cpp
 CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/Scene.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.i: cmake_force
@@ -142,7 +170,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SceneManager.cpp
 CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SceneManager.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.i: cmake_force
@@ -156,7 +184,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.cpp
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.cpp
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.cpp
 
 CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.i: cmake_force
@@ -184,7 +212,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.s: cmake_force
 CMakeFiles/FizzleFramework.dir/src/main.cpp.o: CMakeFiles/FizzleFramework.dir/flags.make
 CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/main.cpp
 CMakeFiles/FizzleFramework.dir/src/main.cpp.o: CMakeFiles/FizzleFramework.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FizzleFramework.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FizzleFramework.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FizzleFramework.dir/src/main.cpp.o -MF CMakeFiles/FizzleFramework.dir/src/main.cpp.o.d -o CMakeFiles/FizzleFramework.dir/src/main.cpp.o -c /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/main.cpp
 
 CMakeFiles/FizzleFramework.dir/src/main.cpp.i: cmake_force
@@ -198,7 +226,9 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.s: cmake_force
 # Object files for target FizzleFramework
 FizzleFramework_OBJECTS = \
 "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o" \
+"CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o" \
 "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o" \
+"CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o" \
 "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o" \
 "CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o" \
 "CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o" \
@@ -211,7 +241,9 @@ FizzleFramework_OBJECTS = \
 FizzleFramework_EXTERNAL_OBJECTS =
 
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o
+bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Core/Texture.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o
+bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/ECS/SpriteComponent.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o
@@ -226,7 +258,7 @@ bin/FizzleFramework: /usr/lib/libGLU.so
 bin/FizzleFramework: /usr/lib/libGLEW.so
 bin/FizzleFramework: /usr/lib/libglm.a
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable bin/FizzleFramework"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable bin/FizzleFramework"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FizzleFramework.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

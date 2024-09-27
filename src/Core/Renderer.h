@@ -1,6 +1,8 @@
 #pragma once
 
+#include "Texture.h"
 #include <GL/glew.h>
+#include <glm/ext/vector_float2.hpp>
 #include <glm/glm.hpp>
 #include <vector>
 #include <string>
@@ -12,7 +14,8 @@ public:
 
     void Initialize();
     void Clear();
-    void DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
+  void DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
+    void DrawTexturedQuad(const glm::vec2& position, const glm::vec2& size, const Texture* texture);
     void Render();
 
 private:
