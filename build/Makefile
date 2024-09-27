@@ -201,6 +201,126 @@ src/ECS/World.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.s
 .PHONY : src/ECS/World.cpp.s
 
+src/Scenes/GameStateManager.o: src/Scenes/GameStateManager.cpp.o
+.PHONY : src/Scenes/GameStateManager.o
+
+# target to build an object file
+src/Scenes/GameStateManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.o
+.PHONY : src/Scenes/GameStateManager.cpp.o
+
+src/Scenes/GameStateManager.i: src/Scenes/GameStateManager.cpp.i
+.PHONY : src/Scenes/GameStateManager.i
+
+# target to preprocess a source file
+src/Scenes/GameStateManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.i
+.PHONY : src/Scenes/GameStateManager.cpp.i
+
+src/Scenes/GameStateManager.s: src/Scenes/GameStateManager.cpp.s
+.PHONY : src/Scenes/GameStateManager.s
+
+# target to generate assembly for a file
+src/Scenes/GameStateManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/GameStateManager.cpp.s
+.PHONY : src/Scenes/GameStateManager.cpp.s
+
+src/Scenes/Scene.o: src/Scenes/Scene.cpp.o
+.PHONY : src/Scenes/Scene.o
+
+# target to build an object file
+src/Scenes/Scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o
+.PHONY : src/Scenes/Scene.cpp.o
+
+src/Scenes/Scene.i: src/Scenes/Scene.cpp.i
+.PHONY : src/Scenes/Scene.i
+
+# target to preprocess a source file
+src/Scenes/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.i
+.PHONY : src/Scenes/Scene.cpp.i
+
+src/Scenes/Scene.s: src/Scenes/Scene.cpp.s
+.PHONY : src/Scenes/Scene.s
+
+# target to generate assembly for a file
+src/Scenes/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.s
+.PHONY : src/Scenes/Scene.cpp.s
+
+src/Scenes/SceneManager.o: src/Scenes/SceneManager.cpp.o
+.PHONY : src/Scenes/SceneManager.o
+
+# target to build an object file
+src/Scenes/SceneManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o
+.PHONY : src/Scenes/SceneManager.cpp.o
+
+src/Scenes/SceneManager.i: src/Scenes/SceneManager.cpp.i
+.PHONY : src/Scenes/SceneManager.i
+
+# target to preprocess a source file
+src/Scenes/SceneManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.i
+.PHONY : src/Scenes/SceneManager.cpp.i
+
+src/Scenes/SceneManager.s: src/Scenes/SceneManager.cpp.s
+.PHONY : src/Scenes/SceneManager.s
+
+# target to generate assembly for a file
+src/Scenes/SceneManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.s
+.PHONY : src/Scenes/SceneManager.cpp.s
+
+src/Scenes/SimpleGameState.o: src/Scenes/SimpleGameState.cpp.o
+.PHONY : src/Scenes/SimpleGameState.o
+
+# target to build an object file
+src/Scenes/SimpleGameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o
+.PHONY : src/Scenes/SimpleGameState.cpp.o
+
+src/Scenes/SimpleGameState.i: src/Scenes/SimpleGameState.cpp.i
+.PHONY : src/Scenes/SimpleGameState.i
+
+# target to preprocess a source file
+src/Scenes/SimpleGameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.i
+.PHONY : src/Scenes/SimpleGameState.cpp.i
+
+src/Scenes/SimpleGameState.s: src/Scenes/SimpleGameState.cpp.s
+.PHONY : src/Scenes/SimpleGameState.s
+
+# target to generate assembly for a file
+src/Scenes/SimpleGameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.s
+.PHONY : src/Scenes/SimpleGameState.cpp.s
+
+src/Scenes/SimpleScene.o: src/Scenes/SimpleScene.cpp.o
+.PHONY : src/Scenes/SimpleScene.o
+
+# target to build an object file
+src/Scenes/SimpleScene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.o
+.PHONY : src/Scenes/SimpleScene.cpp.o
+
+src/Scenes/SimpleScene.i: src/Scenes/SimpleScene.cpp.i
+.PHONY : src/Scenes/SimpleScene.i
+
+# target to preprocess a source file
+src/Scenes/SimpleScene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.i
+.PHONY : src/Scenes/SimpleScene.cpp.i
+
+src/Scenes/SimpleScene.s: src/Scenes/SimpleScene.cpp.s
+.PHONY : src/Scenes/SimpleScene.s
+
+# target to generate assembly for a file
+src/Scenes/SimpleScene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleScene.cpp.s
+.PHONY : src/Scenes/SimpleScene.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -243,6 +363,21 @@ help:
 	@echo "... src/ECS/World.o"
 	@echo "... src/ECS/World.i"
 	@echo "... src/ECS/World.s"
+	@echo "... src/Scenes/GameStateManager.o"
+	@echo "... src/Scenes/GameStateManager.i"
+	@echo "... src/Scenes/GameStateManager.s"
+	@echo "... src/Scenes/Scene.o"
+	@echo "... src/Scenes/Scene.i"
+	@echo "... src/Scenes/Scene.s"
+	@echo "... src/Scenes/SceneManager.o"
+	@echo "... src/Scenes/SceneManager.i"
+	@echo "... src/Scenes/SceneManager.s"
+	@echo "... src/Scenes/SimpleGameState.o"
+	@echo "... src/Scenes/SimpleGameState.i"
+	@echo "... src/Scenes/SimpleGameState.s"
+	@echo "... src/Scenes/SimpleScene.o"
+	@echo "... src/Scenes/SimpleScene.i"
+	@echo "... src/Scenes/SimpleScene.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
