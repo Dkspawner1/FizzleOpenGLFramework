@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o.d"
   "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o"
   "CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o.d"
+  "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o"
+  "CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o.d"
   "CMakeFiles/FizzleFramework.dir/src/main.cpp.o"
   "CMakeFiles/FizzleFramework.dir/src/main.cpp.o.d"
   "bin/FizzleFramework"

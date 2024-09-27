@@ -177,6 +177,30 @@ src/Core/Window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.s
 .PHONY : src/Core/Window.cpp.s
 
+src/ECS/World.o: src/ECS/World.cpp.o
+.PHONY : src/ECS/World.o
+
+# target to build an object file
+src/ECS/World.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.o
+.PHONY : src/ECS/World.cpp.o
+
+src/ECS/World.i: src/ECS/World.cpp.i
+.PHONY : src/ECS/World.i
+
+# target to preprocess a source file
+src/ECS/World.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.i
+.PHONY : src/ECS/World.cpp.i
+
+src/ECS/World.s: src/ECS/World.cpp.s
+.PHONY : src/ECS/World.s
+
+# target to generate assembly for a file
+src/ECS/World.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FizzleFramework.dir/build.make CMakeFiles/FizzleFramework.dir/src/ECS/World.cpp.s
+.PHONY : src/ECS/World.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/Core/Window.o"
 	@echo "... src/Core/Window.i"
 	@echo "... src/Core/Window.s"
+	@echo "... src/ECS/World.o"
+	@echo "... src/ECS/World.i"
+	@echo "... src/ECS/World.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
