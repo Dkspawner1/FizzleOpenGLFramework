@@ -1,27 +1,27 @@
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp \
- /usr/include/stdc-predef.h \
- /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.h \
- /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/stdc-predef.h /usr/include/GL/glew.h \
+ /usr/include/c++/14.2.1/cstddef \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/14.2.1/pstl/pstl_config.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
+ /usr/include/c++/14.2.1/bits/version.h /usr/include/c++/14.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
- /usr/include/c++/14.2.1/stdexcept /usr/include/c++/14.2.1/exception \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/14.2.1/pstl/pstl_config.h \
+ /usr/include/bits/stdint-least.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.h \
+ /usr/include/GLFW/glfw3.h /usr/include/c++/14.2.1/stdexcept \
+ /usr/include/c++/14.2.1/exception \
  /usr/include/c++/14.2.1/bits/exception.h \
- /usr/include/c++/14.2.1/bits/version.h \
  /usr/include/c++/14.2.1/bits/exception_ptr.h \
  /usr/include/c++/14.2.1/bits/exception_defines.h \
  /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
@@ -110,7 +110,6 @@ CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: \
  /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
  /usr/include/c++/14.2.1/bits/memory_resource.h \
- /usr/include/c++/14.2.1/cstddef \
  /usr/include/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/14.2.1/tuple

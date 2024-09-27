@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(FizzleFramework)
+add_compile_definitions(GLEW_STATIC GLEW_NO_GLU)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -7,6 +8,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
+
+set(OpenGL_GL_PREFERENCE GLVND)
+
 
 # Find packages
 find_package(OpenGL REQUIRED)

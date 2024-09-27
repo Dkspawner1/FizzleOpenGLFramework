@@ -1,6 +1,6 @@
+#include <GL/glew.h>
 #include "Window.h"
 #include <stdexcept>
-#include <GL/glew.h>
 
 Window::Window(int width, int height, const char* title) {
     if (!glfwInit()) {

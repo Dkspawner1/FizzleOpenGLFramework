@@ -3,9 +3,7 @@
 
 CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.cpp \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
-  /usr/include/GL/gl.h \
   /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -429,10 +427,8 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: /home/dorll/Desktop/c++/
 
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.h \
-  /usr/include/GL/gl.h \
-  /usr/include/GL/glext.h \
+  /usr/include/GL/glew.h \
   /usr/include/GLFW/glfw3.h \
-  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -538,6 +534,7 @@ CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/Fi
   /usr/include/c++/14.2.1/clocale \
   /usr/include/c++/14.2.1/concepts \
   /usr/include/c++/14.2.1/cstddef \
+  /usr/include/c++/14.2.1/cstdint \
   /usr/include/c++/14.2.1/cstdio \
   /usr/include/c++/14.2.1/cstdlib \
   /usr/include/c++/14.2.1/cwchar \
@@ -587,9 +584,7 @@ CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/Fi
 CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/main.cpp \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.h \
-  /usr/include/GL/gl.h \
   /usr/include/GL/glew.h \
-  /usr/include/GL/glu.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1092,8 +1087,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/ext/quaternion_trigonometric.inl:
 
-/usr/include/GL/glext.h:
-
 /usr/include/glm/ext/quaternion_trigonometric.hpp:
 
 /usr/include/glm/ext/quaternion_transform.inl:
@@ -1150,8 +1143,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/ext/matrix_double4x4.hpp:
 
-/usr/include/KHR/khrplatform.h:
-
 /usr/include/glm/ext/matrix_double4x3_precision.hpp:
 
 /usr/include/glm/ext/matrix_double4x2_precision.hpp:
@@ -1194,12 +1185,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/detail/type_vec3.inl:
 
-/usr/include/sys/cdefs.h:
-
-/usr/include/glm/detail/type_vec3.hpp:
-
-/usr/include/glm/detail/type_vec2.inl:
-
 /usr/include/bits/types/time_t.h:
 
 /usr/include/c++/14.2.1/stdexcept:
@@ -1241,6 +1226,14 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/glm/ext/vector_float1_precision.hpp:
 
 /usr/include/c++/14.2.1/cstdint:
+
+/usr/include/glm/glm.hpp:
+
+/usr/include/c++/14.2.1/bits/hash_bytes.h:
+
+/usr/include/glm/ext/vector_uint4_sized.hpp:
+
+/usr/include/glm/detail/type_mat3x3.inl:
 
 /usr/include/c++/14.2.1/bits/stl_function.h:
 
@@ -1322,25 +1315,19 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/bits/types/mbstate_t.h:
 
-/usr/include/glm/ext/matrix_double3x4.hpp:
+/usr/include/bits/types/timer_t.h:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/gnu/stubs.h:
 
-/usr/include/bits/types/__fpos_t.h:
+/usr/include/c++/14.2.1/bits/localefwd.h:
 
-/usr/include/bits/mathcalls.h:
+/usr/include/bits/mathcalls-narrow.h:
 
-/usr/include/glm/detail/type_mat3x3.hpp:
+/usr/include/glm/detail/func_common.inl:
 
 /usr/include/bits/errno.h:
 
 /usr/include/bits/locale.h:
-
-/usr/include/c++/14.2.1/string_view:
-
-/usr/include/c++/14.2.1/bits/specfun.h:
-
-/usr/include/bits/atomic_wide_counter.h:
 
 /usr/include/glm/ext/vector_uint3.hpp:
 
@@ -1357,6 +1344,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/fp-logb.h:
 
 /usr/include/asm-generic/errno.h:
+
+/usr/include/bits/long-double.h:
 
 /usr/include/c++/14.2.1/bits/exception_ptr.h:
 
@@ -1400,49 +1389,43 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/bits/posix2_lim.h:
 
+/usr/include/glm/ext/matrix_double3x4.hpp:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/glm/detail/type_mat3x3.hpp:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/include/glm/ext/matrix_float3x4_precision.hpp:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
 /usr/include/c++/14.2.1/cassert:
 
-/usr/include/glm/glm.hpp:
-
-/usr/include/c++/14.2.1/bits/hash_bytes.h:
-
-/usr/include/glm/ext/vector_uint4_sized.hpp:
-
-/usr/include/glm/detail/type_mat3x3.inl:
-
 /usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/glm/ext/matrix_float4x4.hpp:
-
-/usr/include/c++/14.2.1/bits/allocator.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/GL/gl.h:
-
-/usr/include/glm/ext/vector_bool4_precision.hpp:
-
-/usr/include/alloca.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/14.2.1/bits/localefwd.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/GL/glu.h:
-
-/usr/include/c++/14.2.1/tr1/exp_integral.tcc:
 
 /usr/include/c++/14.2.1/limits:
 
 /usr/include/c++/14.2.1/backward/binders.h:
 
 /usr/include/asm-generic/errno-base.h:
+
+/usr/include/glm/ext/vector_bool4_precision.hpp:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/14.2.1/tr1/exp_integral.tcc:
+
+/usr/include/glm/ext/matrix_float4x4.hpp:
+
+/usr/include/c++/14.2.1/bits/allocator.h:
 
 /usr/include/bits/byteswap.h:
 
@@ -1463,18 +1446,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/cpu-set.h:
 
 /usr/include/glm/detail/type_mat4x4.hpp:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/glm/detail/func_common.inl:
-
-/usr/include/bits/math-vector.h:
-
-/usr/include/bits/uio_lim.h:
-
-/usr/include/glm/ext/matrix_float3x4_precision.hpp:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
 /usr/include/bits/struct_mutex.h:
 
@@ -1516,10 +1487,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/c++/14.2.1/new:
 
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
 /usr/include/sys/types.h:
 
 /usr/include/c++/14.2.1/exception:
@@ -1531,6 +1498,10 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/endian.h:
 
 /usr/include/c++/14.2.1/concepts:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
 
 /usr/include/glm/ext/scalar_uint_sized.hpp:
 
@@ -1547,6 +1518,16 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/bits/local_lim.h:
+
+/usr/include/c++/14.2.1/bits/specfun.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/14.2.1/string_view:
 
 /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:
 
@@ -1823,3 +1804,9 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/glm/detail/type_mat2x3.inl:
 
 /usr/include/glm/detail/type_vec2.hpp:
+
+/usr/include/glm/detail/type_vec2.inl:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/glm/detail/type_vec3.hpp:

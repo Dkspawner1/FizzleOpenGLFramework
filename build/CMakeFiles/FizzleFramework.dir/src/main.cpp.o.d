@@ -1,8 +1,7 @@
 CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/main.cpp \
- /usr/include/stdc-predef.h \
- /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
- /usr/include/GL/glew.h /usr/include/c++/14.2.1/cstddef \
+ /usr/include/stdc-predef.h /usr/include/GL/glew.h \
+ /usr/include/c++/14.2.1/cstddef \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,9 +17,10 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/glu.h \
- /usr/include/GL/gl.h /usr/include/glm/glm.hpp \
- /usr/include/glm/detail/_fixes.hpp /usr/include/c++/14.2.1/cmath \
+ /usr/include/bits/stdint-least.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
+ /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
+ /usr/include/c++/14.2.1/cmath \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
  /usr/include/c++/14.2.1/ext/type_traits.h /usr/include/math.h \

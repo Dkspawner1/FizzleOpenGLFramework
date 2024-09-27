@@ -124,7 +124,8 @@ bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/src/main.cpp.o
 bin/FizzleFramework: CMakeFiles/FizzleFramework.dir/build.make
-bin/FizzleFramework: /usr/lib/libGL.so
+bin/FizzleFramework: /usr/lib/libOpenGL.so
+bin/FizzleFramework: /usr/lib/libGLX.so
 bin/FizzleFramework: /usr/lib/libGLU.so
 bin/FizzleFramework: /usr/lib/libGLEW.so
 bin/FizzleFramework: /usr/lib/libglm.a

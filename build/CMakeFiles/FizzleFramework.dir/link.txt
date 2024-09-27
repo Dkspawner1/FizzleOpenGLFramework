@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o CMakeFiles/FizzleFramework.dir/src/main.cpp.o -o bin/FizzleFramework  /usr/lib/libGL.so /usr/lib/libGLU.so -lglfw /usr/lib/libGLEW.so /usr/lib/libglm.a
+/usr/bin/c++ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o CMakeFiles/FizzleFramework.dir/src/main.cpp.o -o bin/FizzleFramework  /usr/lib/libOpenGL.so /usr/lib/libGLX.so /usr/lib/libGLU.so -lglfw /usr/lib/libGLEW.so /usr/lib/libglm.a
