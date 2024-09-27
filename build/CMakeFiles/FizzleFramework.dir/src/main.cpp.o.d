@@ -323,8 +323,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/World.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/Entity.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../ECS/Component.h \
- /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h \
  /usr/include/c++/14.2.1/iostream /usr/include/c++/14.2.1/ostream \
  /usr/include/c++/14.2.1/ios /usr/include/c++/14.2.1/bits/ios_base.h \
  /usr/include/c++/14.2.1/bits/locale_classes.h \

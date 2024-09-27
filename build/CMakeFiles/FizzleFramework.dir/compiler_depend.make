@@ -429,8 +429,10 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: /home/dorll/Desktop/c++/
 
 CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.cpp \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Window.h \
-  /usr/include/GL/glew.h \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
   /usr/include/GLFW/glfw3.h \
+  /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -538,7 +540,6 @@ CMakeFiles/FizzleFramework.dir/src/Core/Window.cpp.o: /home/dorll/Desktop/c++/Fi
   /usr/include/c++/14.2.1/clocale \
   /usr/include/c++/14.2.1/concepts \
   /usr/include/c++/14.2.1/cstddef \
-  /usr/include/c++/14.2.1/cstdint \
   /usr/include/c++/14.2.1/cstdio \
   /usr/include/c++/14.2.1/cstdlib \
   /usr/include/c++/14.2.1/cwchar \
@@ -1934,6 +1935,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/GameStateManager.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/Scene.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SceneManager.h \
+  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h \
+  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.h \
   /usr/include/GL/glew.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
@@ -2015,6 +2018,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/14.2.1/array \
@@ -2027,6 +2031,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/allocator.h \
   /usr/include/c++/14.2.1/bits/atomic_base.h \
   /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/14.2.1/bits/basic_ios.h \
+  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
   /usr/include/c++/14.2.1/bits/basic_string.h \
   /usr/include/c++/14.2.1/bits/basic_string.tcc \
   /usr/include/c++/14.2.1/bits/char_traits.h \
@@ -2048,6 +2054,12 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/hashtable.h \
   /usr/include/c++/14.2.1/bits/hashtable_policy.h \
   /usr/include/c++/14.2.1/bits/invoke.h \
+  /usr/include/c++/14.2.1/bits/ios_base.h \
+  /usr/include/c++/14.2.1/bits/istream.tcc \
+  /usr/include/c++/14.2.1/bits/locale_classes.h \
+  /usr/include/c++/14.2.1/bits/locale_classes.tcc \
+  /usr/include/c++/14.2.1/bits/locale_facets.h \
+  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
   /usr/include/c++/14.2.1/bits/localefwd.h \
   /usr/include/c++/14.2.1/bits/memory_resource.h \
   /usr/include/c++/14.2.1/bits/memoryfwd.h \
@@ -2055,6 +2067,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/nested_exception.h \
   /usr/include/c++/14.2.1/bits/new_allocator.h \
   /usr/include/c++/14.2.1/bits/node_handle.h \
+  /usr/include/c++/14.2.1/bits/ostream.tcc \
   /usr/include/c++/14.2.1/bits/ostream_insert.h \
   /usr/include/c++/14.2.1/bits/parse_numbers.h \
   /usr/include/c++/14.2.1/bits/postypes.h \
@@ -2084,6 +2097,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/14.2.1/bits/stl_vector.h \
+  /usr/include/c++/14.2.1/bits/streambuf.tcc \
+  /usr/include/c++/14.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.2.1/bits/string_view.tcc \
   /usr/include/c++/14.2.1/bits/stringfwd.h \
   /usr/include/c++/14.2.1/bits/unique_lock.h \
@@ -2110,6 +2125,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/cstdlib \
   /usr/include/c++/14.2.1/ctime \
   /usr/include/c++/14.2.1/cwchar \
+  /usr/include/c++/14.2.1/cwctype \
   /usr/include/c++/14.2.1/debug/assertions.h \
   /usr/include/c++/14.2.1/debug/debug.h \
   /usr/include/c++/14.2.1/deque \
@@ -2123,18 +2139,25 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/ext/type_traits.h \
   /usr/include/c++/14.2.1/functional \
   /usr/include/c++/14.2.1/initializer_list \
+  /usr/include/c++/14.2.1/ios \
   /usr/include/c++/14.2.1/iosfwd \
+  /usr/include/c++/14.2.1/iostream \
+  /usr/include/c++/14.2.1/istream \
   /usr/include/c++/14.2.1/limits \
   /usr/include/c++/14.2.1/memory \
   /usr/include/c++/14.2.1/mutex \
   /usr/include/c++/14.2.1/new \
+  /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/pstl/execution_defs.h \
   /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/14.2.1/pstl/pstl_config.h \
   /usr/include/c++/14.2.1/ratio \
   /usr/include/c++/14.2.1/stack \
+  /usr/include/c++/14.2.1/stdexcept \
+  /usr/include/c++/14.2.1/streambuf \
   /usr/include/c++/14.2.1/string \
   /usr/include/c++/14.2.1/string_view \
+  /usr/include/c++/14.2.1/system_error \
   /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
   /usr/include/c++/14.2.1/tr1/beta_function.tcc \
   /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
@@ -2158,6 +2181,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
   /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
@@ -2322,6 +2347,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
+  /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
@@ -2377,6 +2403,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/c++/14.2.1/bits/align.h:
 
 /usr/include/c++/14.2.1/backward/auto_ptr.h:
+
+/usr/include/GL/gl.h:
 
 /usr/include/c++/14.2.1/bits/deque.tcc:
 
@@ -2524,6 +2552,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/ext/quaternion_trigonometric.inl:
 
+/usr/include/GL/glext.h:
+
 /usr/include/glm/ext/quaternion_trigonometric.hpp:
 
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h:
@@ -2589,6 +2619,8 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Event.h:
 
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.h:
+
+/usr/include/KHR/khrplatform.h:
 
 /usr/include/glm/ext/matrix_double4x3_precision.hpp:
 

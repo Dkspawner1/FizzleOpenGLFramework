@@ -28,17 +28,39 @@ const char* fragmentShaderSource = R"(
     }
 )";
 
-Renderer::Renderer() : m_vao(0), m_vbo(0), m_shaderProgram(0) {}
+Renderer::Renderer() : m_vao(0), m_vbo(0), m_shaderProgram(0) {
+    std::cout << "Renderer constructor called" << std::endl;
+}
 
 Renderer::~Renderer() {
+    std::cout << "Renderer destructor called" << std::endl;
     glDeleteVertexArrays(1, &m_vao);
     glDeleteBuffers(1, &m_vbo);
     glDeleteProgram(m_shaderProgram);
 }
 
 void Renderer::Initialize() {
+    std::cout << "Renderer::Initialize started" << std::endl;
+    InitializeOpenGL();
+    InitializeShaders();
+    std::cout << "Renderer::Initialize completed" << std::endl;
+}
+
+void Renderer::InitializeOpenGL() {
+    std::cout << "Initializing OpenGL..." << std::endl;
+    GLenum err = glewInit();
+    if (GLEW_OK != err) {
+        throw std::runtime_error("Failed to initialize GLEW");
+    }
+    std::cout << "Using GLEW " << glewGetString(GLEW_VERSION) << std::endl;
+    std::cout << "OpenGL initialization complete" << std::endl;
+}
+
+void Renderer::InitializeShaders() {
+    std::cout << "Initializing shaders..." << std::endl;
     setupShaders();
     setupBuffers();
+    std::cout << "Shader initialization complete" << std::endl;
 }
 
 void Renderer::Clear() {
@@ -78,6 +100,7 @@ void Renderer::Render() {
 }
 
 void Renderer::setupShaders() {
+    std::cout << "Setting up shaders..." << std::endl;
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader);
@@ -96,9 +119,11 @@ void Renderer::setupShaders() {
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    std::cout << "Shaders set up successfully" << std::endl;
 }
 
 void Renderer::setupBuffers() {
+    std::cout << "Setting up buffers..." << std::endl;
     glGenVertexArrays(1, &m_vao);
     glGenBuffers(1, &m_vbo);
 
@@ -112,6 +137,7 @@ void Renderer::setupBuffers() {
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
+    std::cout << "Buffers set up successfully" << std::endl;
 }
 
 void Renderer::checkShaderCompileErrors(GLuint shader, const std::string& type) {

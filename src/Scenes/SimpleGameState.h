@@ -1,3 +1,4 @@
+// SimpleGameState.h
 #pragma once
 #include "GameState.h"
 #include "SceneManager.h"
@@ -11,5 +12,5 @@ public:
     void Render() override;
 
 private:
-    SceneManager& sceneManager;
+    SceneManager& m_sceneManager;
 };

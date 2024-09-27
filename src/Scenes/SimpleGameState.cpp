@@ -1,11 +1,12 @@
+// SimpleGameState.cpp
 #include "SimpleGameState.h"
 #include <iostream>
 
-SimpleGameState::SimpleGameState(SceneManager& sceneManager) : sceneManager(sceneManager) {}
+SimpleGameState::SimpleGameState(SceneManager& sceneManager) : m_sceneManager(sceneManager) {}
 
 void SimpleGameState::Enter() {
     std::cout << "Entered SimpleGameState" << std::endl;
-    sceneManager.SetActiveScene("SimpleScene");
+    m_sceneManager.SetActiveScene("SimpleScene");
 }
 
 void SimpleGameState::Exit() {
@@ -13,9 +14,9 @@ void SimpleGameState::Exit() {
 }
 
 void SimpleGameState::Update(float deltaTime) {
-    sceneManager.Update(deltaTime);
+    m_sceneManager.Update(deltaTime);
 }
 
 void SimpleGameState::Render() {
-    sceneManager.Render();
+    m_sceneManager.Render();
 }

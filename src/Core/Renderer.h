@@ -20,6 +20,8 @@ private:
     GLuint m_shaderProgram;
     std::vector<float> m_vertexData;
 
+    void InitializeOpenGL();
+    void InitializeShaders();
     void setupShaders();
     void setupBuffers();
     void checkShaderCompileErrors(GLuint shader, const std::string& type);

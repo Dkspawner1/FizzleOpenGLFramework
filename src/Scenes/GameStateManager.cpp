@@ -1,3 +1,4 @@
+// src/Scenes/GameStateManager.cpp
 #include "GameStateManager.h"
 
 void GameStateManager::PushState(std::unique_ptr<GameState> state) {
@@ -7,6 +8,7 @@ void GameStateManager::PushState(std::unique_ptr<GameState> state) {
     m_states.push(std::move(state));
     m_states.top()->Enter();
 }
+
 void GameStateManager::PopState() {
     if (!m_states.empty()) {
         m_states.top()->Exit();
@@ -15,15 +17,6 @@ void GameStateManager::PopState() {
     if (!m_states.empty()) {
         m_states.top()->Enter();
     }
-}
-
-void GameStateManager::ChangeState(std::unique_ptr<GameState> state) {
-    while (!m_states.empty()) {
-        m_states.top()->Exit();
-        m_states.pop();
-    }
-    m_states.push(std::move(state));
-    m_states.top()->Enter();
 }
 
 void GameStateManager::Update(float deltaTime) {

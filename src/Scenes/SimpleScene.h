@@ -1,3 +1,4 @@
+// SimpleScene.h
 #pragma once
 #include "Scene.h"
 #include "../Core/Renderer.h"
@@ -12,5 +13,5 @@ public:
     void OnExit() override;
 
 private:
-    Renderer& renderer;
+    Renderer& m_renderer;
 };

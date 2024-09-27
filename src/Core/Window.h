@@ -1,17 +1,19 @@
+// Window.h
 #pragma once
-
-#include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <string>
 
 class Window {
 public:
-    Window(int width, int height, const char* title);
+    Window(int width, int height, const std::string& title);
     ~Window();
 
-    bool ShouldClose() const;
-    void SwapBuffers() const;
+    void MakeContextCurrent();
+    void SwapBuffers();
     void PollEvents();
+    bool ShouldClose() const;
+    void Close();
 
 private:
-    GLFWwindow* m_window;
+    GLFWwindow* m_Window;
 };
