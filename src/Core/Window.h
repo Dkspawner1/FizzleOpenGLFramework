@@ -6,14 +6,15 @@ class Window {
 public:
     Window(int width, int height, const std::string& title);
     ~Window();
-    bool IsKeyPressed(int key) const;
 
     void SwapBuffers();
     void PollEvents();
     bool ShouldClose() const;
     void Close();
     void MakeContextCurrent();
+    bool IsKeyPressed(int key) const;
 
 private:
     GLFWwindow* m_Window;
+    static void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 };

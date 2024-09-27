@@ -1,6 +1,7 @@
 #include "Core/SceneChangedEvent.h"
 #include "Core/Renderer.h"
 #include "Core/Window.h"
+#include "Core/EventSystem.h"
 #include "Scenes/GameStateManager.h"
 #include "Scenes/SceneManager.h"
 #include "Scenes/SimpleScene.h"
@@ -8,21 +9,8 @@
 #include <iostream>
 #include <memory>
 #include <GLFW/glfw3.h>
-#include <chrono>
-#include <thread>
-#include <csignal>
-#include <atomic>
-
-std::atomic<bool> g_shouldExit(false);
-
-void signalHandler(int signum) {
-    std::cout << "Interrupt signal (" << signum << ") received.\n";
-    g_shouldExit = true;
-}
 
 int main() {
-    signal(SIGINT, signalHandler);
-
     try {
         std::cout << "Initializing window..." << std::endl;
         Window window(800, 600, "2D Renderer");
@@ -58,13 +46,8 @@ int main() {
         stateManager.PushState(std::make_unique<SimpleGameState>(sceneManager));
 
         std::cout << "Entering main loop..." << std::endl;
-        int frameCount = 0;
-        auto lastTime = std::chrono::high_resolution_clock::now();
-
-        while (!window.ShouldClose() && !g_shouldExit) {
-            auto currentTime = std::chrono::high_resolution_clock::now();
-            float deltaTime = std::chrono::duration<float>(currentTime - lastTime).count();
-            lastTime = currentTime;
+        while (!window.ShouldClose()) {
+            float deltaTime = 0.016f; // Assume 60 FPS for simplicity
 
             eventSystem.processEvents();
             stateManager.Update(deltaTime);
@@ -78,16 +61,6 @@ int main() {
                 std::cout << "ESC key pressed, closing window..." << std::endl;
                 window.Close();
             }
-
-            frameCount++;
-            if (frameCount % 60 == 0) {
-                std::cout << "Frame " << frameCount << " completed. Window should close: "
-                          << (window.ShouldClose() ? "true" : "false")
-                          << ", g_shouldExit: " << (g_shouldExit ? "true" : "false") << std::endl;
-            }
-
-            // Add a small sleep to prevent busy-waiting
-            std::this_thread::sleep_for(std::chrono::milliseconds(1));
         }
         std::cout << "Exiting main loop..." << std::endl;
     }

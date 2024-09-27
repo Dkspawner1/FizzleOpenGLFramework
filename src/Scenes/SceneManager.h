@@ -1,12 +1,12 @@
 #pragma once
+
 #include "Scene.h"
 #include "../Core/EventSystem.h"
-#include <memory>
 #include <unordered_map>
+#include <memory>
 #include <string>
 
-class SceneManager
-{
+class SceneManager {
 public:
     SceneManager(EventSystem& eventSystem);
     void AddScene(const std::string& name, std::unique_ptr<Scene> scene);

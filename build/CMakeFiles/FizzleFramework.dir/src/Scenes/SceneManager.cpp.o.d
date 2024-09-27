@@ -127,6 +127,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: \
  /usr/include/c++/14.2.1/bits/stl_bvector.h \
  /usr/include/c++/14.2.1/bits/vector.tcc \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../Core/EventSystem.h \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../Core/Event.h \
  /usr/include/c++/14.2.1/functional \
  /usr/include/c++/14.2.1/bits/std_function.h \
  /usr/include/c++/14.2.1/array /usr/include/c++/14.2.1/compare \
@@ -141,17 +142,14 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: \
  /usr/include/c++/14.2.1/bits/std_mutex.h \
  /usr/include/c++/14.2.1/bits/unique_lock.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/14.2.1/cerrno \
- /usr/include/c++/14.2.1/condition_variable \
- /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
- /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../Core/Event.h \
- /usr/include/c++/14.2.1/string \
+ /usr/include/c++/14.2.1/cerrno /usr/include/c++/14.2.1/string \
  /usr/include/c++/14.2.1/bits/char_traits.h \
  /usr/include/c++/14.2.1/bits/localefwd.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/include/c++/14.2.1/clocale /usr/include/locale.h \
  /usr/include/bits/locale.h /usr/include/c++/14.2.1/cctype \
  /usr/include/ctype.h /usr/include/c++/14.2.1/bits/ostream_insert.h \
+ /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
  /usr/include/c++/14.2.1/bits/basic_string.h \
  /usr/include/c++/14.2.1/string_view \
  /usr/include/c++/14.2.1/bits/string_view.tcc \
@@ -171,5 +169,6 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: \
  /usr/include/bits/stdio_lim.h /usr/include/bits/stdio.h \
  /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
+ /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/../Core/SceneChangedEvent.h \
  /usr/include/c++/14.2.1/utility \
  /usr/include/c++/14.2.1/bits/stl_relops.h

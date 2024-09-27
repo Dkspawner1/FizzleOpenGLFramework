@@ -1,4 +1,6 @@
-#include "EventSystem.h"
+#pragma once
+
+#include "../Core/Event.h"
 #include <string>
 
 class SceneChangedEvent : public Event {

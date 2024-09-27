@@ -1091,6 +1091,7 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/Scene.cpp.o: /home/dorll/Desktop/c++/F
 CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SceneManager.cpp \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Event.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/EventSystem.h \
+  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/SceneChangedEvent.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Component.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Entity.h \
   /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/World.h \
@@ -1241,7 +1242,6 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SceneManager.cpp.o: /home/dorll/Deskto
   /usr/include/c++/14.2.1/clocale \
   /usr/include/c++/14.2.1/compare \
   /usr/include/c++/14.2.1/concepts \
-  /usr/include/c++/14.2.1/condition_variable \
   /usr/include/c++/14.2.1/cstddef \
   /usr/include/c++/14.2.1/cstdint \
   /usr/include/c++/14.2.1/cstdio \
@@ -1478,7 +1478,6 @@ CMakeFiles/FizzleFramework.dir/src/Scenes/SimpleGameState.cpp.o: /home/dorll/Des
   /usr/include/c++/14.2.1/clocale \
   /usr/include/c++/14.2.1/compare \
   /usr/include/c++/14.2.1/concepts \
-  /usr/include/c++/14.2.1/condition_variable \
   /usr/include/c++/14.2.1/cstddef \
   /usr/include/c++/14.2.1/cstdint \
   /usr/include/c++/14.2.1/cstdio \
@@ -1987,19 +1986,15 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
   /usr/include/bits/cpu-set.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
   /usr/include/bits/fp-fast.h \
   /usr/include/bits/fp-logb.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/libm-simd-decl-stubs.h \
@@ -2012,26 +2007,12 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/bits/mathcalls.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/sched.h \
   /usr/include/bits/select.h \
   /usr/include/bits/setjmp.h \
-  /usr/include/bits/sigaction.h \
-  /usr/include/bits/sigcontext.h \
-  /usr/include/bits/sigevent-consts.h \
-  /usr/include/bits/siginfo-arch.h \
-  /usr/include/bits/siginfo-consts-arch.h \
-  /usr/include/bits/siginfo-consts.h \
-  /usr/include/bits/signal_ext.h \
-  /usr/include/bits/signum-arch.h \
-  /usr/include/bits/signum-generic.h \
-  /usr/include/bits/sigstack.h \
-  /usr/include/bits/sigstksz.h \
-  /usr/include/bits/sigthread.h \
-  /usr/include/bits/ss_flags.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-least.h \
   /usr/include/bits/stdint-uintn.h \
@@ -2054,24 +2035,17 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/types/error_t.h \
   /usr/include/bits/types/locale_t.h \
   /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sig_atomic_t.h \
-  /usr/include/bits/types/sigevent_t.h \
-  /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/sigval_t.h \
-  /usr/include/bits/types/stack_t.h \
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/types/struct_timeval.h \
   /usr/include/bits/types/struct_tm.h \
@@ -2081,7 +2055,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
   /usr/include/bits/uio_lim.h \
-  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
@@ -2089,7 +2062,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/14.2.1/array \
-  /usr/include/c++/14.2.1/atomic \
   /usr/include/c++/14.2.1/backward/auto_ptr.h \
   /usr/include/c++/14.2.1/backward/binders.h \
   /usr/include/c++/14.2.1/bit \
@@ -2151,7 +2123,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/std_abs.h \
   /usr/include/c++/14.2.1/bits/std_function.h \
   /usr/include/c++/14.2.1/bits/std_mutex.h \
-  /usr/include/c++/14.2.1/bits/std_thread.h \
   /usr/include/c++/14.2.1/bits/stl_algobase.h \
   /usr/include/c++/14.2.1/bits/stl_bvector.h \
   /usr/include/c++/14.2.1/bits/stl_construct.h \
@@ -2170,7 +2141,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/14.2.1/bits/string_view.tcc \
   /usr/include/c++/14.2.1/bits/stringfwd.h \
-  /usr/include/c++/14.2.1/bits/this_thread_sleep.h \
   /usr/include/c++/14.2.1/bits/unique_lock.h \
   /usr/include/c++/14.2.1/bits/unique_ptr.h \
   /usr/include/c++/14.2.1/bits/unordered_map.h \
@@ -2183,14 +2153,11 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/cctype \
   /usr/include/c++/14.2.1/cerrno \
   /usr/include/c++/14.2.1/cfloat \
-  /usr/include/c++/14.2.1/chrono \
   /usr/include/c++/14.2.1/climits \
   /usr/include/c++/14.2.1/clocale \
   /usr/include/c++/14.2.1/cmath \
   /usr/include/c++/14.2.1/compare \
   /usr/include/c++/14.2.1/concepts \
-  /usr/include/c++/14.2.1/condition_variable \
-  /usr/include/c++/14.2.1/csignal \
   /usr/include/c++/14.2.1/cstddef \
   /usr/include/c++/14.2.1/cstdint \
   /usr/include/c++/14.2.1/cstdio \
@@ -2230,7 +2197,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/c++/14.2.1/string \
   /usr/include/c++/14.2.1/string_view \
   /usr/include/c++/14.2.1/system_error \
-  /usr/include/c++/14.2.1/thread \
   /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
   /usr/include/c++/14.2.1/tr1/beta_function.tcc \
   /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
@@ -2401,7 +2367,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
@@ -2409,7 +2374,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/memory.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
-  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -2420,9 +2384,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
   /usr/include/sys/types.h \
-  /usr/include/sys/ucontext.h \
   /usr/include/time.h \
-  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
@@ -2433,49 +2395,19 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/syslimits.h
 
 
-/usr/include/c++/14.2.1/bits/this_thread_sleep.h:
-
-/usr/include/c++/14.2.1/bits/std_thread.h:
-
-/usr/include/bits/types/struct_sigstack.h:
-
-/usr/include/bits/types/stack_t.h:
-
-/usr/include/bits/ss_flags.h:
-
-/usr/include/bits/sigthread.h:
-
-/usr/include/bits/sigstksz.h:
-
-/usr/include/bits/siginfo-consts-arch.h:
-
-/usr/include/bits/sigcontext.h:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/bits/confname.h:
-
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/main.cpp:
 
 /usr/include/c++/14.2.1/ratio:
 
-/usr/include/bits/sigevent-consts.h:
-
 /usr/include/c++/14.2.1/functional:
 
 /usr/include/c++/14.2.1/ctime:
-
-/usr/include/bits/sigstack.h:
-
-/usr/include/c++/14.2.1/condition_variable:
 
 /usr/include/c++/14.2.1/compare:
 
 /usr/include/c++/14.2.1/bits/std_mutex.h:
 
 /usr/include/c++/14.2.1/bits/std_function.h:
-
-/usr/include/bits/siginfo-arch.h:
 
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SceneManager.h:
 
@@ -2517,8 +2449,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/syslimits.h:
 
-/usr/include/c++/14.2.1/atomic:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h:
@@ -2539,8 +2469,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/limits.h:
 
-/usr/include/bits/types/__sigval_t.h:
-
 /usr/include/gnu/stubs-64.h:
 
 /usr/include/glm/vec3.hpp:
@@ -2556,8 +2484,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/glm/mat4x2.hpp:
 
 /usr/include/glm/mat3x4.hpp:
-
-/usr/include/bits/types/sigevent_t.h:
 
 /usr/include/glm/mat3x3.hpp:
 
@@ -2655,8 +2581,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/ext/vector_bool3.hpp:
 
-/usr/include/bits/siginfo-consts.h:
-
 /usr/include/glm/ext/vector_bool2.hpp:
 
 /usr/include/glm/ext/vector_bool1.hpp:
@@ -2668,8 +2592,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/GL/glext.h:
 
 /usr/include/glm/ext/quaternion_trigonometric.hpp:
-
-/usr/include/bits/types/siginfo_t.h:
 
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleGameState.h:
 
@@ -2711,8 +2633,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/ext/matrix_float3x2_precision.hpp:
 
-/usr/include/bits/signum-generic.h:
-
 /usr/include/glm/ext/matrix_float3x2.hpp:
 
 /usr/include/glm/ext/matrix_float2x4.hpp:
@@ -2720,8 +2640,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/limits.h:
 
 /usr/include/glm/ext/matrix_float2x3.hpp:
-
-/usr/include/sys/ucontext.h:
 
 /usr/include/stdc-predef.h:
 
@@ -2750,8 +2668,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/glm/gtc/type_ptr.inl:
 
 /usr/include/glm/ext/matrix_double4x2.hpp:
-
-/usr/include/bits/getopt_core.h:
 
 /usr/include/glm/ext/matrix_double3x4_precision.hpp:
 
@@ -2933,13 +2849,9 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/bits/struct_rwlock.h:
 
-/usr/include/bits/environments.h:
-
 /usr/include/bits/types/struct_FILE.h:
 
 /usr/include/bits/types/sigset_t.h:
-
-/usr/include/bits/signal_ext.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
@@ -2948,8 +2860,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/mathcalls.h:
-
-/usr/include/bits/types/sig_atomic_t.h:
 
 /usr/include/c++/14.2.1/mutex:
 
@@ -2999,8 +2909,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/bits/fp-logb.h:
 
-/usr/include/c++/14.2.1/chrono:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/bits/long-double.h:
@@ -3008,8 +2916,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Scenes/SimpleScene.h:
 
 /usr/include/c++/14.2.1/bits/exception_ptr.h:
-
-/usr/include/linux/close_range.h:
 
 /usr/include/glm/detail/func_vector_relational.inl:
 
@@ -3149,8 +3055,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/c++/14.2.1/exception:
 
-/usr/include/c++/14.2.1/thread:
-
 /usr/include/bits/types/struct_timeval.h:
 
 /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/ECS/Component.h:
@@ -3208,8 +3112,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/c++/14.2.1/bits/stringfwd.h:
 
 /usr/include/glm/detail/func_packing.inl:
-
-/usr/include/bits/unistd_ext.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
@@ -3339,8 +3241,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/c++/14.2.1/tr1/ell_integral.tcc:
 
-/usr/include/unistd.h:
-
 /usr/include/c++/14.2.1/tr1/legendre_function.tcc:
 
 /usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc:
@@ -3371,8 +3271,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/detail/type_mat3x2.hpp:
 
-/usr/include/bits/getopt_posix.h:
-
 /usr/include/errno.h:
 
 /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
@@ -3397,11 +3295,7 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/endian.h:
 
-/usr/include/bits/types/sigval_t.h:
-
 /usr/include/glm/detail/_vectorize.hpp:
-
-/usr/include/signal.h:
 
 /usr/include/strings.h:
 
@@ -3414,8 +3308,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/bits/fp-fast.h:
 
 /usr/include/glm/detail/func_exponential.inl:
-
-/usr/include/c++/14.2.1/csignal:
 
 /usr/include/c++/14.2.1/utility:
 
@@ -3443,8 +3335,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 
 /usr/include/glm/detail/type_mat2x2.hpp:
 
-/usr/include/bits/signum-arch.h:
-
 /usr/include/c++/14.2.1/bits/stl_relops.h:
 
 /usr/include/c++/14.2.1/bits/basic_string.tcc:
@@ -3458,8 +3348,6 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: /home/dorll/Desktop/c++/FizzleOpe
 /usr/include/glm/detail/type_mat2x3.hpp:
 
 /usr/include/glm/detail/type_mat2x4.hpp:
-
-/usr/include/bits/posix_opt.h:
 
 /usr/include/glm/detail/type_mat2x4.inl:
 

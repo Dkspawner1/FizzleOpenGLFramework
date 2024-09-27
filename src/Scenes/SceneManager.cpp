@@ -1,16 +1,9 @@
 #include "SceneManager.h"
 #include "Scene.h"
+#include "../Core/SceneChangedEvent.h"
 #include <memory>
 #include <string>
 #include <utility>
-
-class SceneChangedEvent : public Event {
-public:
-    SceneChangedEvent(const std::string& oldScene, const std::string& newScene)
-        : oldSceneName(oldScene), newSceneName(newScene) {}
-    std::string oldSceneName;
-    std::string newSceneName;
-};
 
 SceneManager::SceneManager(EventSystem& eventSystem) : m_eventSystem(eventSystem) {}
 
@@ -32,7 +25,7 @@ void SceneManager::SetActiveScene(const std::string& name) {
     activeScene->OnEnter();
 
     // Dispatch the scene changed event
-    m_eventSystem.queueEvent(SceneChangedEvent(oldSceneName, name));
+    m_eventSystem.emitEvent(SceneChangedEvent(oldSceneName, name));
 }
 
 Scene* SceneManager::GetActiveScene() {
