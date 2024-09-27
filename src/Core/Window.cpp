@@ -1,4 +1,4 @@
-/ Window.cpp
+// Window.cpp
 #include "Window.h"
 #include <stdexcept>
 
