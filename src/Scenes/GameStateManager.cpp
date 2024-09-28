@@ -26,7 +26,7 @@ void GameStateManager::Update(float deltaTime) {
 }
 
 void GameStateManager::Render() {
-    if (!m_states.empty()) {
-        m_states.top()->Render();
+    if (auto state = m_states.top().get()) {
+        state->Render();
     }
 }

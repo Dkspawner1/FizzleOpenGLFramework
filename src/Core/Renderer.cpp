@@ -83,32 +83,66 @@ void Renderer::DrawQuad(const glm::vec2 &position, const glm::vec2 &size,
   m_vertexData.insert(m_vertexData.end(), std::begin(vertices),
                       std::end(vertices));
 }
+void Renderer::DrawTexturedQuad(const glm::vec2& position, const glm::vec2& size, const Texture* texture)
+{
+    if (texture && texture->IsLoaded())
+    {
+        std::cout << "Drawing textured quad. Position: (" << position.x << ", " << position.y
+                  << "), Size: (" << size.x << ", " << size.y
+                  << "), Texture size: " << texture->GetWidth() << "x" << texture->GetHeight() << std::endl;
 
-void Renderer::DrawTexturedQuad(const glm::vec2& position, const glm::vec2& size, const Texture* texture) {
-    if (texture) {
         texture->Bind();
-    }
 
-    // Set up your shader for textured rendering
-    // Use your shader program for textured quads
+        // TODO: Set up your shader for textured rendering
+        // You'll need to create and use a shader program for textured quads
 
-    // Set up vertex data (and buffer(s)) and attribute pointers
-    float vertices[] = {
-        // positions        // texture coords
-        position.x,         position.y,          0.0f, 0.0f,
-        position.x + size.x, position.y,          1.0f, 0.0f,
-        position.x,         position.y + size.y, 0.0f, 1.0f,
-        position.x + size.x, position.y + size.y, 1.0f, 1.0f
-    };
+        // Set up vertex data (and buffer(s)) and attribute pointers
+        float vertices[] = {
+            // positions        // texture coords
+            position.x,         position.y,          0.0f, 0.0f,
+            position.x + size.x, position.y,          1.0f, 0.0f,
+            position.x,         position.y + size.y, 0.0f, 1.0f,
+            position.x + size.x, position.y + size.y, 1.0f, 1.0f
+        };
 
-    // Draw the quad
-    // Use your OpenGL draw calls here
+        // TODO: Set up VAO and VBO for this quad
+        GLuint VAO, VBO;
+        glGenVertexArrays(1, &VAO);
+        glGenBuffers(1, &VBO);
 
-    if (texture) {
+        glBindVertexArray(VAO);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+        // Position attribute
+        glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)0);
+        glEnableVertexAttribArray(0);
+        // Texture coord attribute
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(2 * sizeof(float)));
+        glEnableVertexAttribArray(1);
+
+        // Draw the quad
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+
+        // Clean up
+        glBindVertexArray(0);
+        glDeleteVertexArrays(1, &VAO);
+        glDeleteBuffers(1, &VBO);
+
         texture->Unbind();
+
+        // Check for OpenGL errors
+        GLenum error = glGetError();
+        if (error != GL_NO_ERROR)
+        {
+            std::cout << "OpenGL Error in DrawTexturedQuad: " << error << std::endl;
+        }
+    }
+    else
+    {
+        std::cout << "Attempted to draw quad with null or unloaded texture" << std::endl;
     }
 }
-
 void Renderer::Render() {
   glUseProgram(m_shaderProgram);
 

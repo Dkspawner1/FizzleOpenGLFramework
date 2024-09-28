@@ -10,11 +10,13 @@
 #include <iostream>
 #include <memory>
 #include <GLFW/glfw3.h>
+#include <filesystem>
 
 int main() {
+    std::cout << "Current path is "<< std::filesystem::current_path() << std::endl;
     try {
         std::cout << "Initializing window..." << std::endl;
-        Window window(800, 600, "2D Renderer");
+        Window window(1600, 900, "2D Renderer");
 
         std::cout << "Making OpenGL context current..." << std::endl;
         window.MakeContextCurrent();
@@ -55,7 +57,7 @@ int main() {
 
             eventSystem.processEvents();
             stateManager.Update(deltaTime);
-            stateManager.Render();
+            stateManager.Render(); // Make sure this is calling SimpleScene::Render()
 
             window.SwapBuffers();
             window.PollEvents();
