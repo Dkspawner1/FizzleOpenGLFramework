@@ -53,34 +53,23 @@ void SimpleScene::Update(float deltaTime) {
     }
 }
 void SimpleScene::Render() {
-    std::cout << "SimpleScene::Render() called" << std::endl;
     m_renderer.Clear();
-    m_renderer.DrawQuad({100, 100}, {50, 50}, {1.0f, 0.0f, 0.0f, 1.0f}); // Red square
-    m_renderer.DrawQuad({200, 200}, {100, 75}, {0.0f, 1.0f, 0.0f, 1.0f}); // Green rectangle
-
-    std::cout << "Number of entities to render: " << m_entities.size() << std::endl;
 
     for (const auto &entity : m_entities) {
         try {
             const auto &sprite = m_world.GetComponent<SpriteComponent>(entity);
             const auto &transform = m_world.GetComponent<TransformComponent>(entity);
-            const Texture* texture = sprite.GetTexture();
-            
-            if (texture && sprite.IsTextureLoaded()) {
-                std::cout << "Rendering textured quad for entity. "
-                          << "Position: (" << transform.position.x << ", " << transform.position.y << "), "
-                          << "Size: (" << transform.size.x << ", " << transform.size.y << "), "
-                          << "Texture size: " << texture->GetWidth() << "x" << texture->GetHeight() << std::endl;
-                m_renderer.DrawTexturedQuad(transform.position, transform.size, texture);
-            } else {
-                std::cout << "Skipping render for entity - texture not loaded" << std::endl;
-            }
+            m_renderer.DrawTexturedQuad(transform.position, transform.size, sprite.GetTexture());
         } catch (const std::exception &e) {
             std::cerr << "Error rendering entity: " << e.what() << std::endl;
         }
     }
+
+    // Draw these after the textured quad if you want them on top
+    m_renderer.DrawQuad({100, 100}, {50, 50}, {1.0f, 0.0f, 0.0f, 1.0f}); // Red square
+    m_renderer.DrawQuad({200, 200}, {100, 75}, {0.0f, 1.0f, 0.0f, 1.0f}); // Green rectangle
+
     m_renderer.Render();
-    std::cout << "SimpleScene::Render() completed" << std::endl;
 }
 void SimpleScene::OnEnter() {
     std::cout << "Entered SimpleScene" << std::endl;

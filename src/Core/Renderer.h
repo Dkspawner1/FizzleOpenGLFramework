@@ -14,18 +14,20 @@ public:
 
     void Initialize();
     void Clear();
-  void DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
+    void DrawQuad(const glm::vec2& position, const glm::vec2& size, const glm::vec4& color);
     void DrawTexturedQuad(const glm::vec2& position, const glm::vec2& size, const Texture* texture);
     void Render();
 
 private:
     GLuint m_vao, m_vbo;
+    GLuint m_colorVAO, m_colorVBO;
     GLuint m_shaderProgram;
-    std::vector<float> m_vertexData;
+    GLuint m_colorShaderProgram;
 
     void InitializeOpenGL();
     void InitializeShaders();
     void setupShaders();
+    void setupColorShaders();
     void setupBuffers();
     void checkShaderCompileErrors(GLuint shader, const std::string& type);
     void checkProgramLinkErrors(GLuint program);
