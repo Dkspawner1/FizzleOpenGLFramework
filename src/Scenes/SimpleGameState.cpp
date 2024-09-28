@@ -1,5 +1,5 @@
 // SimpleGameState.cpp
-#include "SimpleGameState.h"
+#include "FizzleFramework/Scenes/SimpleGameState.h"
 #include <iostream>
 
 SimpleGameState::SimpleGameState(SceneManager& sceneManager) : m_sceneManager(sceneManager) {}

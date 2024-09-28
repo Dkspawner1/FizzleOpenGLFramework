@@ -33,10 +33,9 @@ endif()
 # Add stb_image directory
 set(STB_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/external/stb)
 
-# Collect source files
+# Collect source files (only .cpp files now)
 file(GLOB_RECURSE SOURCE_FILES
     ${CMAKE_SOURCE_DIR}/src/*.cpp
-    ${CMAKE_SOURCE_DIR}/src/*.h
 )
 
 # Add executable
@@ -44,7 +43,6 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
 # Set include directories
 target_include_directories(${PROJECT_NAME} PRIVATE
-    ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}/include
     ${OPENGL_INCLUDE_DIR}
     ${GLFW_INCLUDE_DIRS}

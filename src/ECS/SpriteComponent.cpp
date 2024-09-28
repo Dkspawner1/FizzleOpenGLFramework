@@ -1,4 +1,4 @@
-#include "SpriteComponent.h"
+#include "FizzleFramework/ECS/SpriteComponent.h"
 #include <iostream>
 #include <memory>
 

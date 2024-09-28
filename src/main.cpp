@@ -1,12 +1,14 @@
-#include "Core/SceneChangedEvent.h"
-#include "Core/Renderer.h"
-#include "Core/Window.h"
-#include "Core/EventSystem.h"
-#include "Scenes/GameStateManager.h"
-#include "Scenes/SceneManager.h"
-#include "Scenes/SimpleScene.h"
-#include "Scenes/SimpleGameState.h"
-#include "ECS/World.h"
+
+#include "FizzleFramework/Core/SceneChangedEvent.h"
+#include "FizzleFramework/Core/Renderer.h"
+#include "FizzleFramework/Core/Window.h"
+#include "FizzleFramework/Core/EventSystem.h"
+#include "FizzleFramework/Scenes/GameStateManager.h"
+#include "FizzleFramework/Scenes/SceneManager.h"
+#include "FizzleFramework/Scenes/SimpleScene.h"
+#include "FizzleFramework/Scenes/SimpleGameState.h"
+#include "FizzleFramework/ECS/World.h"
+
 #include <iostream>
 #include <memory>
 #include <GLFW/glfw3.h>

@@ -1,6 +1,5 @@
 #pragma once
-
-#include "../Core/Event.h"
+#include "FizzleFramework/Core/Event.h"
 #include <string>
 
 class SceneChangedEvent : public Event {

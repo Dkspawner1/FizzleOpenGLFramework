@@ -1,5 +1,5 @@
 // SimpleScene.cpp
-#include "SimpleScene.h"
+#include "FizzleFramework/Scenes/SimpleScene.h"
 #include <glm/ext/vector_float2.hpp>
 #include <iostream>
 #include <filesystem>

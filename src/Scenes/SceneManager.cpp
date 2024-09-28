@@ -1,6 +1,7 @@
-#include "SceneManager.h"
-#include "Scene.h"
-#include "../Core/SceneChangedEvent.h"
+#include "FizzleFramework/Scenes/SceneManager.h"
+#include "FizzleFramework/Scenes/Scene.h"
+#include "FizzleFramework/Core/SceneChangedEvent.h"
+
 #include <memory>
 #include <string>
 #include <utility>

@@ -6,4 +6,4 @@ class System
     virtual ~System() = default;
     virtual void Update(World & world, float deltaTime) = 0;
 
-}
+};

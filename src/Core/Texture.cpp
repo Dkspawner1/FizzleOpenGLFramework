@@ -1,5 +1,5 @@
 #define STB_IMAGE_IMPLEMENTATION
-#include "Texture.h"
+#include "FizzleFramework/Core/Texture.h"
 #include <iostream>
 
 Texture::Texture(const std::string& path)

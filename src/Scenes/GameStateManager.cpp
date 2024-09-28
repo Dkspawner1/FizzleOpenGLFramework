@@ -1,5 +1,5 @@
 // src/Scenes/GameStateManager.cpp
-#include "GameStateManager.h"
+#include "FizzleFramework/Scenes/GameStateManager.h"
 
 void GameStateManager::PushState(std::unique_ptr<GameState> state) {
     if (!m_states.empty()) {
