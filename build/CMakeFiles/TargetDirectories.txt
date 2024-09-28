@@ -1,3 +1,0 @@
-/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles/FizzleFramework.dir
-/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles/edit_cache.dir
-/home/dorll/Desktop/c++/FizzleOpenGLFramework/build/CMakeFiles/rebuild_cache.dir
