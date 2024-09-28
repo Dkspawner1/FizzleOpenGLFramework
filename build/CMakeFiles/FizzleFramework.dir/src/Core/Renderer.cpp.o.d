@@ -3,32 +3,37 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: \
  /usr/include/stdc-predef.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.h \
- /usr/include/stb/stb_image.h /usr/include/stdio.h \
- /usr/include/bits/libc-header-start.h /usr/include/features.h \
- /usr/include/features-time64.h /usr/include/bits/wordsize.h \
- /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
- /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
+ /usr/include/GL/glew.h /usr/include/c++/14.2.1/cstddef \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/include/c++/14.2.1/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /usr/include/c++/14.2.1/bits/version.h /usr/include/c++/14.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__mbstate_t.h \
+ /usr/include/bits/time64.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
+ /usr/include/stb/stb_image.h /usr/include/stdio.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h /usr/include/bits/stdio.h \
  /usr/include/c++/14.2.1/stdlib.h /usr/include/c++/14.2.1/cstdlib \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
- /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/14.2.1/pstl/pstl_config.h /usr/include/stdlib.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
- /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
+ /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
+ /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
  /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
@@ -47,10 +52,8 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: \
  /usr/include/c++/14.2.1/bits/memoryfwd.h \
  /usr/include/c++/14.2.1/bits/char_traits.h \
  /usr/include/c++/14.2.1/bits/postypes.h /usr/include/c++/14.2.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/wchar.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/c++/14.2.1/type_traits \
- /usr/include/c++/14.2.1/bits/version.h \
+ /usr/include/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h /usr/include/c++/14.2.1/type_traits \
  /usr/include/c++/14.2.1/bits/allocator.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
  /usr/include/c++/14.2.1/bits/new_allocator.h /usr/include/c++/14.2.1/new \
@@ -103,15 +106,9 @@ CMakeFiles/FizzleFramework.dir/src/Core/Renderer.cpp.o: \
  /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
  /usr/include/c++/14.2.1/bits/memory_resource.h \
- /usr/include/c++/14.2.1/cstddef \
  /usr/include/c++/14.2.1/bits/uses_allocator.h \
  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/14.2.1/tuple /usr/include/GL/glew.h \
- /usr/include/c++/14.2.1/cstdint \
- /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
- /usr/include/glm/ext/vector_float2.hpp \
+ /usr/include/c++/14.2.1/tuple /usr/include/glm/ext/vector_float2.hpp \
  /usr/include/glm/detail/type_vec2.hpp \
  /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
  /usr/include/c++/14.2.1/cassert /usr/include/assert.h \

@@ -8,22 +8,23 @@ SimpleScene::SimpleScene(Renderer &renderer, World &world)
     : m_renderer(renderer), m_world(world) {}
 
     void SimpleScene::Initialize() {
-        std::cout << "SimpleScene initialized" << std::endl;
-        std::cout << "Current path is " << std::filesystem::current_path() << std::endl;
+    std::cout << "SimpleScene::Initialize() called" << std::endl;
+    std::cout << "Current path is " << std::filesystem::current_path() << std::endl;
 
-        std::string texturePath = "assets/wallhaven-l8x1pr.jpg";
-        std::cout << "Attempting to load texture: " << texturePath << std::endl;
+    std::string texturePath = "assets/wallhaven-l8x1pr.jpg";
+    std::cout << "Attempting to load texture: " << texturePath << std::endl;
 
-        if (std::filesystem::exists(texturePath)) {
-            std::cout << "Texture file exists" << std::endl;
-        } else {
-            std::cout << "Texture file does not exist. Full path: "
-                      << std::filesystem::absolute(texturePath) << std::endl;
-        }
+    if (std::filesystem::exists(texturePath)) {
+        std::cout << "Texture file exists" << std::endl;
+    } else {
+        std::cout << "Texture file does not exist. Full path: " 
+                  << std::filesystem::absolute(texturePath) << std::endl;
+    }
 
-        Entity *entity = m_world.CreateEntity();
-        std::cout << "Entity created" << std::endl;
+    Entity *entity = m_world.CreateEntity();
+    std::cout << "Entity created" << std::endl;
 
+    try {
         auto& spriteComponent = m_world.AddComponent<SpriteComponent>(entity, texturePath);
         std::cout << "SpriteComponent added to entity" << std::endl;
 
@@ -37,7 +38,12 @@ SimpleScene::SimpleScene(Renderer &renderer, World &world)
         } else {
             std::cout << "Failed to load texture for entity" << std::endl;
         }
+    } catch (const std::exception& e) {
+        std::cerr << "Error initializing entity: " << e.what() << std::endl;
     }
+
+    std::cout << "SimpleScene::Initialize() completed" << std::endl;
+}
 
 void SimpleScene::Update(float deltaTime) {
     (void)deltaTime; // Suppress unused parameter warning
@@ -59,7 +65,7 @@ void SimpleScene::Render() {
             const auto &sprite = m_world.GetComponent<SpriteComponent>(entity);
             const auto &transform = m_world.GetComponent<TransformComponent>(entity);
             const Texture* texture = sprite.GetTexture();
-
+            
             if (texture && sprite.IsTextureLoaded()) {
                 std::cout << "Rendering textured quad for entity. "
                           << "Position: (" << transform.position.x << ", " << transform.position.y << "), "

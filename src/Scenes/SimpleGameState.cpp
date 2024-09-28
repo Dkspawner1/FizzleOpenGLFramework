@@ -7,6 +7,11 @@ SimpleGameState::SimpleGameState(SceneManager& sceneManager) : m_sceneManager(sc
 void SimpleGameState::Enter() {
     std::cout << "Entered SimpleGameState" << std::endl;
     m_sceneManager.SetActiveScene("SimpleScene");
+    if (auto activeScene = m_sceneManager.GetActiveScene()) {
+        activeScene->Initialize();
+    } else {
+        std::cerr << "Failed to get active scene in SimpleGameState::Enter()" << std::endl;
+    }
 }
 
 void SimpleGameState::Exit() {

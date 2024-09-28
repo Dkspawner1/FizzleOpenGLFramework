@@ -109,11 +109,11 @@ CMakeFiles/FizzleFramework.dir/src/main.cpp.o: \
  /usr/include/c++/14.2.1/tuple \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Renderer.h \
  /home/dorll/Desktop/c++/FizzleOpenGLFramework/src/Core/Texture.h \
- /usr/include/stb/stb_image.h /usr/include/c++/14.2.1/stdlib.h \
  /usr/include/GL/glew.h /usr/include/c++/14.2.1/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
+ /usr/include/stb/stb_image.h /usr/include/c++/14.2.1/stdlib.h \
  /usr/include/glm/ext/vector_float2.hpp \
  /usr/include/glm/detail/type_vec2.hpp \
  /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
